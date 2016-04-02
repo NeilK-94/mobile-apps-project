@@ -1,12 +1,10 @@
 fileFormatVersion: 2
-guid: 130c1140ce970254ea04564395dee482
-timeCreated: 1459602329
+guid: 3788922e49d7d9448bd5ec6ee646a5c7
+timeCreated: 1459602662
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Player
-    21300002: Ground
-    21300004: Spikes
+    21300000: Ground
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,7 +28,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 128
+  maxTextureSize: 512
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -53,39 +51,21 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Player
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 112
-        width: 16
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
     - name: Ground
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
-        width: 16
-        height: 16
+        x: 1
+        y: 124
+        width: 35
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: Spikes
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -17.5, y: 17.5}
+        - {x: -17.5, y: -17.5}
+        - {x: 17.5, y: -17.5}
+        - {x: 17.5, y: 17.5}
     outline: []
   spritePackingTag: 
   userData: 
