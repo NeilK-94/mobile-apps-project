@@ -14,9 +14,11 @@ public class PlayerController : MonoBehaviour {
 
     private bool doubleJumped;
 
+    private Animator anim;
+
 	// Use this for initialization
 	void Start () {
-	
+        anim = GetComponent<Animator>();
 	}
 
     void FixedUpdate()
@@ -31,6 +33,8 @@ public class PlayerController : MonoBehaviour {
         {
             doubleJumped = false;
         }
+
+        anim.SetBool("Grounded", grounded);
 
         if (Input.GetKeyDown (KeyCode.Space) && grounded)   //  if space is pressed
         {
@@ -53,6 +57,16 @@ public class PlayerController : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);  //  - move speed as a is backwards
         }
 
+        anim.SetFloat("Speed",Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));   //  mathf.abs returns negative value as positive
+
+        if(GetComponent<Rigidbody2D>().velocity.x > 0)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+        else if(GetComponent<Rigidbody2D>().velocity.x < 0)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
     }
 
     public void Jump()  //  jump method

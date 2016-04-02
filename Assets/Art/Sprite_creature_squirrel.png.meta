@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: ddf09f632551223459b6cc30787f7860
-timeCreated: 1459596046
+timeCreated: 1459606531
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Squirrel
+    21300002: Player_Running_1
+    21300004: Player_Running_2
+    21300006: Jump_1
+    21300008: Jump_2
+    21300010: Jump_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,6 +63,61 @@ TextureImporter:
         y: 229
         width: 26
         height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Player_Running_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 230
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Player_Running_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 230
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 100
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 103
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Jump_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 103
+        width: 31
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
