@@ -47,15 +47,20 @@ public class PlayerController : MonoBehaviour {
             doubleJumped = true;
         }
 
+        
         if (Input.GetKey(KeyCode.D))   //  if D is pressed
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+            
         }
 
         if (Input.GetKey(KeyCode.A))   //  if A is pressed
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);  //  - move speed as a is backwards
+            
         }
+
+        //GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, rigidbody2D.velocity.y);
 
         anim.SetFloat("Speed",Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));   //  mathf.abs returns negative value as positive
 
